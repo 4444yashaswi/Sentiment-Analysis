@@ -1,5 +1,10 @@
 from flask import Flask, request
+from flask_cors import CORS
+
 app = Flask(__name__)
+
+#CORS Setup
+CORS(app)
 
 # from helpers.model import train
 # from helpers.model import prediction
@@ -61,7 +66,7 @@ def hello_world():
 
 @app.route('/predict', methods=['GET','POST'])
 def predict():
-    if request.method == 'GET':
+    if request.method == 'POST':
         data = {}
         data["sentiment"] = prediction(request.data)
         return data
