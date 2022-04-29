@@ -11,7 +11,7 @@ const Main = () => {
     const submitHandler = async (event) => {
         try{
             event.preventDefault();
-            const res = await axios.get("/prediction",{
+            const res = await axios.post("/prediction",{
                 data: review,
             });
 
