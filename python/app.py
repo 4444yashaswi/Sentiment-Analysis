@@ -1,6 +1,8 @@
+from datetime import datetime
 from flask import Flask, request
 from flask_cors import CORS
 import json
+from datetime import date
 
 app = Flask(__name__)
 
@@ -162,7 +164,7 @@ def recognize(inp):
 
     for entity,label in pos_tags:
         if label in ['NE','NN','NNP']:
-            words.append({"entity":entity,"lable":label})
+            words.append({"entity":entity,"lable":label,"date":date.today()})
             
     return words
 
