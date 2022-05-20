@@ -1,0 +1,18 @@
+.signup-form--container{
+    background-image: url('D:\GitHub\Sentiment-Analysis\client\src\assets\login-signup-page.png');
+    background-position: top right;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	max-width: 100vw;
+}
+
+.signup--container{
+    padding-left: 65vw;
+    text-align: center;
+    padding-top: 20vh;
+}
+
+.button--container{
+    padding-top: 50px;
+    padding-left: 85vw;
+}

@@ -1,4 +1,5 @@
-import { useState } from "react";
+// import { useState } from "react";
+import './InputForm.css';
 import Button from '../UI/Button/Button';
 
 const InputForm = (props) => {
@@ -7,13 +8,13 @@ const InputForm = (props) => {
     return <form onSubmit = {props.submitHandler}>
         <textarea
           type="text"
-          rows='5' cols='50' 
-          placeholder='Enter your review' 
+          rows='20' cols='60' 
+          placeholder="Today's entry" 
           value = {props.review} 
           onChange={props.reviewChangeHandler}
         />
         <br />
-        <Button type="submit">Submit</Button>
+        <Button type="submit">Done</Button>
     </form>
 }
 

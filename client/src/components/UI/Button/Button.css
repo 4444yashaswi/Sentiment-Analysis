@@ -1,10 +1,14 @@
 .btn{
+    margin-top: 5px;
     border: none;
     border-radius: 7px;
-    width: 150px;
+    width: 180px;
     height: 30px;
     background-color: rgba(0, 204, 255, 0.685);
     color: white;
+    font-weight: bold;
+    /* font-style: c; */
+    /* font-size: 20px; */
     transition: 0.5s;
 }
 .btn:hover{
