@@ -10,7 +10,7 @@ function connectMongo() {
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,
-        useFindAndModify: false,
+        // useFindAndModify: false,
       },
       (err) => {
         if (err) console.log(err);
